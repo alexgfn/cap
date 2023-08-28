@@ -7,7 +7,7 @@ import aPlusIcon from '../images/aplus.webp'
 function ThirdSection() {
     return (
         <div className="custom-container">
-            <h2 className="custom-title">Join the 500,000 businesses that have connected to Fundbox</h2>
+            <h2 className="custom-title">Join the 500,000 businesses that have connected to GFN Capital</h2>
             <div className="custom-card-container">
                 <div className="custom-card">
                     <img src={threeBillIcon} alt="$3B+" className="custom-image" />

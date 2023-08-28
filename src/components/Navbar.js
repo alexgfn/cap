@@ -1,16 +1,30 @@
 import React from 'react';
 import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+    
+    function handleTeamClick() {
+        navigate('/about');
+    }
+
+    function handleHomeClick() {
+        navigate('/')
+    }
+    function handleProgramClick() {
+        navigate('/program')
+    }
+
     return (
         <div className="navbar">
             <div className="navbar-left">
                 <h2>GFN Capital</h2>
             </div>
             <div className="navbar-right">
-                <a href="/">Home</a>
-                <a href="/programs">Programs</a>
-                <a href="/team">Team</a>
+                <p onClick={handleHomeClick} className="nav-item clickable" href="/">Home</p>
+                <p onClick={handleProgramClick} className="nav-item clickable" href="/programs">Programs</p>
+                <p className="nav-item clickable" onClick={handleTeamClick}>Company</p>
             </div>
         </div>
     );

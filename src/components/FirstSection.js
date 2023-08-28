@@ -11,7 +11,7 @@ const FirstSection = () => {
                         <div className="text-content">
                             <h1>Working capital made simple.</h1>
                             <h3>Optimize your cash flow and manage expenses with a revolving line of credit up to $150,000. Apply today without impacting your credit score.</h3>
-                            <a target="_blank" href="/signup" className="cta-button">Get Started</a>
+                            <a target="_blank" href="/" className="cta-button">Get Started</a>
                         </div>
                         <div className="image-content">
                             <figure>
